@@ -1,0 +1,126 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Test</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    -->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruzon</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px; /* Telefon va planshet uchun o'lcham */
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        .container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .container button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Katta ekranlarda ham markazda ko'rinishi uchun */
+        @media (min-width: 768px) {
+            .container {
+                width: 400px;
+                height: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Gruzon</h1>
+    <form>
+        <label for="from">From Where</label>
+        <input type="text" id="from" name="from">
+
+        <label for="to">To Where</label>
+        <input type="text" id="to" name="to">
+
+        <label for="transport">Transport</label>
+        <input type="text" id="transport" name="transport">
+
+        <label for="weight">Weight</label>
+        <input type="text" id="weight" name="weight">
+
+<!--        <label for="load">Load</label>-->
+<!--        <input type="text" id="load" name="load">-->
+
+<!--        <label for="price">Price</label>-->
+<!--        <input type="text" id="price" name="price">-->
+
+<!--        <label for="avans">Avans</label>-->
+<!--        <input type="text" id="avans" name="avans">-->
+
+<!--        <label for="payment">Payment Type</label>-->
+<!--        <input type="text" id="payment" name="payment">-->
+
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" name="phone">
+
+        <label for="info">Info</label>
+        <input type="text" id="info" name="info">
+
+        <label for="company-info">Company Info</label>
+        <input type="text" id="company-info" name="company-info">
+
+        <button type="submit">Save</button>
+    </form>
+</div>
+</body>
+</html>

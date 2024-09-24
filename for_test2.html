@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruzon</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .card-header {
+            background-color: transparent;
+            color: black;
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 20px;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .form-floating {
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Formning kichik ekranlarda markaziy va to'liq ko'rinishi uchun */
+        @media (max-width: 768px) {
+            .card {
+                margin: 10px;
+                margin-top: 70px;
+            }
+        }
+
+        /* Katta ekranlar uchun formani to'g'ri joylashishi uchun */
+        @media (min-width: 768px) {
+            .card {
+                width: 500px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin-top: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="card-body">
+        <form>
+            <!-- "From Where" bo'limi -->
+            <div class="form-floating">
+                <input type="text" class="form-control" id="from" placeholder="From Where">
+                <label for="from">From Where</label>
+            </div>
+
+            <!-- "To Where" bo'limi -->
+            <div class="form-floating">
+                <input type="text" class="form-control" id="to" placeholder="To Where">
+                <label for="to">To Where</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="text" class="form-control" id="transport" placeholder="Transport">
+                <label for="transport">Transport</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="text" class="form-control" id="weight" placeholder="Weight">
+                <label for="weight">Weight</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="text" class="form-control" id="load" placeholder="Load">
+                <label for="load">Load</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="text" class="form-control" id="price" placeholder="Price">
+                <label for="price">Price</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="text" class="form-control" id="avans" placeholder="Avans">
+                <label for="avans">Avans</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="text" class="form-control" id="payment" placeholder="Payment Type">
+                <label for="payment">Payment Type</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="text" class="form-control" id="phone" placeholder="Phone">
+                <label for="phone">Phone</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="text" class="form-control" id="info" placeholder="Info">
+                <label for="info">Info</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="text" class="form-control" id="company-info" placeholder="Company Info">
+                <label for="company-info">Company Info</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Save</button>
+        </form>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
